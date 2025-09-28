@@ -1,0 +1,1182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OCI AI Foundations Associate Portal</title>
+    <!-- Bootstrap 5 CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <style>
+        body {
+            background: #f8f9fa;
+        }
+        .sidebar {
+            background: #212529;
+            min-height: 100vh;
+        }
+        .sidebar .nav-link {
+            color: #fff;
+            margin-bottom: 8px;
+        }
+        .sidebar .nav-link.active {
+            background: #0d6efd;
+            color: #fff;
+        }
+        .content-section {
+            padding: 2rem;
+        }
+        .download-btn {
+            float: right;
+        }
+        @media (max-width: 768px) {
+            .sidebar {
+                min-height: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row flex-nowrap">
+            <!-- Sidebar Navigation -->
+            <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 sidebar">
+                <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2">
+                    <a href="#" class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+                        <span class="fs-4">OCI AI Portal</span>
+                    </a>
+                    <nav class="nav nav-pills flex-column mb-sm-auto mb-0">
+                        <a class="nav-link active" data-bs-toggle="tab" href="#section-ai">AI Foundations</a>
+                        <a class="nav-link" data-bs-toggle="tab" href="#section-ml">ML Foundations</a>
+                        <a class="nav-link" data-bs-toggle="tab" href="#section-dl">DL Foundations</a>
+                        <a class="nav-link" data-bs-toggle="tab" href="#section-genai">Gen AI / LLMs</a>
+                        <a class="nav-link" data-bs-toggle="tab" href="#section-prompt">Prompt Engineering</a>
+                        <a class="nav-link" data-bs-toggle="tab" href="#section-portfolio">OCI AI Portfolio</a>
+                        <a class="nav-link" data-bs-toggle="tab" href="#section-genaisrv">OCI Gen AI Services</a>
+                    </nav>
+                    <hr>
+                    <form class="w-100 mb-3">
+                        <input type="text" id="searchInput" class="form-control" placeholder="Search notes...">
+                    </form>
+                </div>
+            </div>
+            <!-- Main Content -->
+            <div class="col py-3">
+                <div class="tab-content">
+                   <!-- AI Foundations Section -->
+<div class="tab-pane fade show active content-section" id="section-ai">
+    <h2>AI Foundations
+        <button class="btn btn-outline-success btn-sm download-btn" onclick="downloadNotes('AI Foundations')">Download Notes</button>
+    </h2>
+    <p class="text-muted">Brief summary: Core concepts of AI, AGI, ML, DL, types of learning, and generative AI, with real-world examples and use cases.</p>
+    <div class="accordion" id="accordionAI">
+        <!-- AI Definition -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingAI1">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAI1" aria-expanded="true" aria-controls="collapseAI1">
+                    AI Definition
+                </button>
+            </h2>
+            <div id="collapseAI1" class="accordion-collapse collapse show" aria-labelledby="headingAI1" data-bs-parent="#accordionAI">
+                <div class="accordion-body">
+                    <ul>
+                        <li>Ability of machines to imitate human intelligence and problem-solving.</li>
+                        <li>Includes tasks like learning, reasoning, communication, and creativity.</li>
+                        <li>Field that aims to make machines perform tasks that require human intelligence.</li>
+                        <li>Example: A self-driving car</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- AGI -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingAI2">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAI2" aria-expanded="false" aria-controls="collapseAI2">
+                    Artificial General Intelligence (AGI)
+                </button>
+            </h2>
+            <div id="collapseAI2" class="accordion-collapse collapse" aria-labelledby="headingAI2" data-bs-parent="#accordionAI">
+                <div class="accordion-body">
+                    <ul>
+                        <li>Machines that fully replicate human capabilities.</li>
+                        <li>Can perform complex tasks without human intervention.</li>
+                        <li>AI = AGI applied to specific, narrow tasks.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- AI Technologies and Domains -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingAI3">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAI3" aria-expanded="false" aria-controls="collapseAI3">
+                    AI Technologies & Domains
+                </button>
+            </h2>
+            <div id="collapseAI3" class="accordion-collapse collapse" aria-labelledby="headingAI3" data-bs-parent="#accordionAI">
+                <div class="accordion-body">
+                    <strong>Technologies:</strong>
+                    <ul>
+                        <li>Machine Learning</li>
+                        <li>Deep Learning</li>
+                        <li>Data Science</li>
+                    </ul>
+                    <strong>Domains & Examples:</strong>
+                    <ul>
+                        <li>Language: Translation</li>
+                        <li>Vision: Image classification</li>
+                        <li>Speech: Text to speech</li>
+                        <li>...and many more</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Machine Learning -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingAI4">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAI4" aria-expanded="false" aria-controls="collapseAI4">
+                    Machine Learning (ML)
+                </button>
+            </h2>
+            <div id="collapseAI4" class="accordion-collapse collapse" aria-labelledby="headingAI4" data-bs-parent="#accordionAI">
+                <div class="accordion-body">
+                    <ul>
+                        <li><strong>Definition:</strong> <span class="fw-bold">A subset of AI</span> that enables machines to <span class="fw-bold">learn from data</span> and make predictions/decisions without being explicitly programmed.</li>
+                        <li><strong>Example:</strong> Spam filter that learns from email content and user actions.</li>
+                    </ul>
+                    <h5 class="mt-3 mb-2">What is an Algorithm in ML?</h5>
+                    <ul>
+                        <li><span class="fw-bold">A set of mathematical rules or procedures</span> the model uses to learn from data.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Deep Learning -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingAI5">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAI5" aria-expanded="false" aria-controls="collapseAI5">
+                    Deep Learning (DL)
+                </button>
+            </h2>
+            <div id="collapseAI5" class="accordion-collapse collapse" aria-labelledby="headingAI5" data-bs-parent="#accordionAI">
+                <div class="accordion-body">
+                    <ul>
+                        <li><strong>Definition:</strong> A subset of ML using deep neural networks to learn complex patterns in data.</li>
+                        <li><strong>Example:</strong> Image recognition software that detects cats in pictures.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Types of Machine Learning -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingAI6">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAI6" aria-expanded="false" aria-controls="collapseAI6">
+                    Types of Machine Learning
+                </button>
+            </h2>
+            <div id="collapseAI6" class="accordion-collapse collapse" aria-labelledby="headingAI6" data-bs-parent="#accordionAI">
+                <div class="accordion-body">
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <h5 class="card-title">Supervised Learning</h5>
+                            <ul>
+                                <li>Learns from labelled data (input + known output).</li>
+                                <li>Uses labelled data to train algorithms to predict outcomes or classify data.</li>
+                                <li><strong>Example:</strong> Credit card approval system trained on historical approval data.</li>
+                                <li><strong>Process:</strong> Input data + known outcomes → model is trained → used to predict outcomes for new data.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <h5 class="card-title">Unsupervised Learning</h5>
+                            <ul>
+                                <li>Works with unlabelled data to find hidden patterns or groupings (clusters).</li>
+                                <li><strong>Example:</strong> Retail - grouping customers by income, family size, etc.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <h5 class="card-title">Reinforcement Learning</h5>
+                            <ul>
+                                <li>Learns through trial and error by interacting with an environment and receiving feedback (reward/punishment).</li>
+                                <li>Focuses on training agents to make sequences of decisions through trial and error to maximize rewards.</li>
+                                <li><strong>Example:</strong> Games like Chess, Tesla Car.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Deep Learning More Detail -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingAI7">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAI7" aria-expanded="false" aria-controls="collapseAI7">
+                    Deep Learning – More Detail
+                </button>
+            </h2>
+            <div id="collapseAI7" class="accordion-collapse collapse" aria-labelledby="headingAI7" data-bs-parent="#accordionAI">
+                <div class="accordion-body">
+                    <ul>
+                        <li>Uses layers of neurons (like brain cells) to extract features from raw data (like pixels).</li>
+                        <li>Makes decisions without human-defined rules.</li>
+                        <li>Best for: Complex tasks like image classification (cat vs dog).</li>
+                        <li>Technique: Supervised learning + functional approximation (estimating hidden functions from known data).</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Generative AI -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingAI8">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAI8" aria-expanded="false" aria-controls="collapseAI8">
+                    Generative AI
+                </button>
+            </h2>
+            <div id="collapseAI8" class="accordion-collapse collapse" aria-labelledby="headingAI8" data-bs-parent="#accordionAI">
+                <div class="accordion-body">
+                    <ul>
+                        <li><strong>Definition:</strong> A subset of ML focused on creating new content (text, image, audio, etc.).</li>
+                        <li><strong>How it works:</strong> Learns patterns from existing data and generates new outputs.</li>
+                        <li><strong>Example:</strong> ChatGPT generates human-like text responses.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+                  <div class="tab-pane fade content-section" id="section-ml">
+    <h2>ML Foundations
+        <button class="btn btn-outline-success btn-sm download-btn" onclick="downloadNotes('ML Foundations')">Download Notes</button>
+    </h2>
+    <p class="text-muted">Core ML concepts: data, types, terms, and classic supervised algorithms—clearly presented and easy to reference.</p>
+    <div class="accordion" id="accordionML">
+        <!-- Basic Concepts -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="ml1-head">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#ml1-body" aria-expanded="true" aria-controls="ml1-body">
+                    Basic Concepts in Machine Learning
+                </button>
+            </h2>
+            <div id="ml1-body" class="accordion-collapse collapse show" aria-labelledby="ml1-head" data-bs-parent="#accordionML">
+                <div class="accordion-body">
+                    <ul>
+                        <li><strong>Input Data:</strong> Features used to describe objects (e.g., colour, texture, eye colour).</li>
+                        <li><strong>Label:</strong> The correct classification (e.g., "dog" or "cat").</li>
+                        <li><strong>Training:</strong> Feeding input features and labels to a model to help it learn relationships.</li>
+                        <li><strong>Inference:</strong> Using the trained model to make predictions on new data.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Types of Machine Learning -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="ml2-head">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#ml2-body" aria-expanded="false" aria-controls="ml2-body">
+                    Types of Machine Learning
+                </button>
+            </h2>
+            <div id="ml2-body" class="accordion-collapse collapse" aria-labelledby="ml2-head" data-bs-parent="#accordionML">
+                <div class="accordion-body">
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <h5>Supervised Learning</h5>
+                            <ul>
+                                <li><strong>Uses:</strong> Labelled data</li>
+                                <li><strong>Goal:</strong> Learn the relationship between features and known labels</li>
+                                <li><strong>Applications:</strong> Disease detection, Weather forecasting, Stock price prediction, Spam detection, Credit scoring</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <h5>Unsupervised Learning</h5>
+                            <ul>
+                                <li><strong>Uses:</strong> Unlabelled data</li>
+                                <li><strong>Goal:</strong> Discover patterns, groupings, or anomalies</li>
+                                <li><strong>Applications:</strong> Fraud detection, Segmentation, Outlier detection, Targeted marketing</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <h5>Reinforcement Learning</h5>
+                            <ul>
+                                <li><strong>Uses:</strong> Learns by trial and error</li>
+                                <li><strong>Goal:</strong> Maximize outcomes over time</li>
+                                <li><strong>Applications:</strong> Self-driving cars</li>
+                                <li>
+                                    <strong>How It Works:</strong>
+                                    <ul>
+                                        <li>Define Environment, States, Actions, Rewards/Penalties</li>
+                                        <li>Training: exploration to exploitation</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- General Key Terms -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="ml3-head">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#ml3-body" aria-expanded="false" aria-controls="ml3-body">
+                    General Key Terms in ML
+                </button>
+            </h2>
+            <div id="ml3-body" class="accordion-collapse collapse" aria-labelledby="ml3-head" data-bs-parent="#accordionML">
+                <div class="accordion-body">
+                    <ul>
+                        <li><strong>Training Data:</strong> Dataset used to teach the model.</li>
+                        <li><strong>Trained Model:</strong> Learns from data and makes predictions.</li>
+                        <li><strong>Prediction/Inference:</strong> Model output when given new input.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Output Types -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="ml4-head">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#ml4-body" aria-expanded="false" aria-controls="ml4-body">
+                    Supervised Learning Output Types
+                </button>
+            </h2>
+            <div id="ml4-body" class="accordion-collapse collapse" aria-labelledby="ml4-head" data-bs-parent="#accordionML">
+                <div class="accordion-body">
+                    <ul>
+                        <li><strong>Continuous Output:</strong> Use Regression (Linear)</li>
+                        <li><strong>Categorical Output:</strong> Use Classification (Logistic)</li>
+                        <li><strong>Continuous:</strong> value within a range (like stock price).</li>
+                        <li><strong>Categorical:</strong> discrete outcomes ("yes"/"no").</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Classification: Logistic Regression -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="ml5-head">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#ml5-body" aria-expanded="false" aria-controls="ml5-body">
+                    Classification and Logistic Regression
+                </button>
+            </h2>
+            <div id="ml5-body" class="accordion-collapse collapse" aria-labelledby="ml5-head" data-bs-parent="#accordionML">
+                <div class="accordion-body">
+                    <strong>Classification</strong>
+                    <ul>
+                        <li>Binary: Two outcomes (e.g., Spam or Not Spam)</li>
+                        <li>Multi-class: More than two (e.g., Sentiment: Positive/Negative/Neutral)</li>
+                    </ul>
+                    <strong>Logistic Regression</strong>
+                    <ul>
+                        <li>Predicts class probability</li>
+                        <li>Uses sigmoid function (values 0-1)</li>
+                        <li>
+                            Example (Pass/Fail):
+                            <ul>
+                                <li>Feature: Study hours</li>
+                                <li>Output: Pass (>0.5), Fail (≤0.5)</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Regression example: Linear Regression -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="ml6-head">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#ml6-body" aria-expanded="false" aria-controls="ml6-body">
+                    Regression Example: Linear Regression
+                </button>
+            </h2>
+            <div id="ml6-body" class="accordion-collapse collapse" aria-labelledby="ml6-head" data-bs-parent="#accordionML">
+                <div class="accordion-body">
+                    <strong>Linear regression</strong>
+                    <ul>
+                        <li>Models relationship between continuous inputs and outputs (straight line prediction)</li>
+                        <li>Adjusts slope (<b>w</b>) and bias (<b>b</b>) to reduce loss</li>
+                        <li>Common use: house price prediction</li>
+                    </ul>
+                    <strong>Example: House price prediction</strong>
+                    <ul>
+                        <li><strong>Input:</strong> House size</li>
+                        <li><strong>Output:</strong> House price</li>
+                        <li>Each pair (size, price) is a training example</li>
+                        <li>Scatter plot shows trend. f(x)=w*x+b</li>
+                        <li>Learn best fit with loss = (yActual–yPredicted)<sup>2</sup></li>
+                        <li>Training: learn best line; Prediction: apply to new data</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+                  <!-- DL Foundations Section -->
+<div class="tab-pane fade content-section" id="section-dl">
+    <h2>DL Foundations
+        <button class="btn btn-outline-success btn-sm download-btn" onclick="downloadNotes('DL Foundations')">Download Notes</button>
+    </h2>
+    <p class="text-muted">Major Deep Learning concepts: neural networks, sequence models, architectures, applications, and limitations—clearly presented for deep understanding.</p>
+    <div class="accordion" id="accordionDL">
+        <!-- What is Deep Learning -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="dl1-head">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#dl1-body" aria-expanded="true" aria-controls="dl1-body">
+                    What is Deep Learning?
+                </button>
+            </h2>
+            <div id="dl1-body" class="accordion-collapse collapse show" aria-labelledby="dl1-head" data-bs-parent="#accordionDL">
+                <div class="accordion-body">
+                    <ul>
+                        <li>Subset of Machine Learning (ML) using Artificial Neural Networks (ANNs) to extract features from raw data.</li>
+                        <li>No manual feature extraction required.</li>
+                        <li>Supports parallel processing for large datasets, enabling scalability and performance.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- ANN Structure and Training -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="dl2-head">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#dl2-body" aria-expanded="false" aria-controls="dl2-body">
+                    Artificial Neural Networks (ANN)
+                </button>
+            </h2>
+            <div id="dl2-body" class="accordion-collapse collapse" aria-labelledby="dl2-head" data-bs-parent="#accordionDL">
+                <div class="accordion-body">
+                    <ul>
+                        <li>Modelled after the human brain; composed of neurons (nodes) connected via weights.</li>
+                        <li>Neurons compute weighted sums, apply an activation function, and pass results forward.</li>
+                        <li>
+                            <strong>Network Structure:</strong>
+                            <ul>
+                                <li>Input Layer: Raw data input (e.g., image pixels).</li>
+                                <li>Hidden Layers: Extract internal features.</li>
+                                <li>Output Layer: Final predictions (e.g., digit 0–9).</li>
+                                <li>Bias: Allows flexibility in learning.</li>
+                                <li>Weights: Strength of neuron connections.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <strong>Training an ANN:</strong>
+                    <ul>
+                        <li>Uses large labeled datasets (e.g., images).</li>
+                        <li>Backpropagation algorithm adjusts weights to reduce prediction error iteratively.</li>
+                        <li>Model training involves showing data, comparing predictions with true labels, and updating weights for better accuracy.</li>
+                    </ul>
+                    <strong>Example: Digit Recognition Using ANN</strong>
+                    <ul>
+                        <li>Input: 28x28 pixel images (784 inputs).</li>
+                        <li>Hidden layers: 2 layers, 16 neurons each.</li>
+                        <li>Output layer: 10 neurons (digits 0–9).</li>
+                        <li>Training process: show image, compute prediction, compare with label, use backpropagation to adjust weights, repeat.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Applications by Data Type -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="dl3-head">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#dl3-body" aria-expanded="false" aria-controls="dl3-body">
+                    Applications by Data Type
+                </button>
+            </h2>
+            <div id="dl3-body" class="accordion-collapse collapse" aria-labelledby="dl3-head" data-bs-parent="#accordionDL">
+                <div class="accordion-body">
+                    <ul>
+                        <li><strong>Images:</strong> Classification, object detection, segmentation → <span class="fw-bold">CNNs</span></li>
+                        <li><strong>Text:</strong> Translation, sentiment analysis, summarization → <span class="fw-bold">Transformers, RNNs, LSTMs</span></li>
+                        <li><strong>Audio:</strong> Speech-to-text, music generation → <span class="fw-bold">Transformers or sequence models</span></li>
+                        <li><strong>Generative Tasks:</strong> Text-to-image, text generation → <span class="fw-bold">Transformers, GANs, Diffusion Models</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Overview of Deep Learning Architecture -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="dl4-head">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#dl4-body" aria-expanded="false" aria-controls="dl4-body">
+                    Overview of Deep Learning Architectures
+                </button>
+            </h2>
+            <div id="dl4-body" class="accordion-collapse collapse" aria-labelledby="dl4-head" data-bs-parent="#accordionDL">
+                <div class="accordion-body">
+                    <ul>
+                        <li><strong>Feedforward Neural Network (FNN/MLP):</strong> Simplest NN, no memory.</li>
+                        <li><strong>Convolutional Neural Network (CNN):</strong> Designed for image/video data, learns patterns automatically.</li>
+                        <li><strong>Recurrent Neural Network (RNN):</strong> Handles sequential data, maintains hidden state.</li>
+                        <li><strong>Autoencoders:</strong> Unsupervised, for feature extraction, compression, anomaly detection.</li>
+                        <li><strong>Long Short-Term Memory (LSTM):</strong> Solves long-term sequence dependencies.</li>
+                        <li><strong>Generative Adversarial Networks (GANs):</strong> Generates realistic synthetic data.</li>
+                        <li><strong>Transformers:</strong> SOTA for NLP and generative tasks.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Sequence Models: RNN/LSTM -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="dl5-head">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#dl5-body" aria-expanded="false" aria-controls="dl5-body">
+                    Sequence Models: RNN & LSTM
+                </button>
+            </h2>
+            <div id="dl5-body" class="accordion-collapse collapse" aria-labelledby="dl5-head" data-bs-parent="#accordionDL">
+                <div class="accordion-body">
+                    <strong>Sequence Models</strong>
+                    <ul>
+                        <li>Sequences: ordered data points/events (e.g., time series).</li>
+                        <li>Goal: Detect temporal patterns for prediction/classification/generation.</li>
+                    </ul>
+                    <strong>Recurrent Neural Networks (RNNs):</strong>
+                    <ul>
+                        <li>Feedback loops, maintains hidden state across time steps.</li>
+                        <li>Architectures:
+                            <ul>
+                                <li>One-to-One: Like feedforward NN.</li>
+                                <li>One-to-Many: e.g., music generation.</li>
+                                <li>Many-to-One: e.g., sentiment analysis.</li>
+                                <li>Many-to-Many: e.g., machine translation.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Limitation:</strong> Vanishing gradient in long-term dependencies; LSTM helps overcome this.</li>
+                    </ul>
+                    <strong>Long Short-Term Memory (LSTM):</strong>
+                    <ul>
+                        <li>Captures long-term dependencies with memory cells and gating mechanisms.</li>
+                        <li>Components:
+                            <ul>
+                                <li>Input Gate: Stores new info.</li>
+                                <li>Forget Gate: Discards old info.</li>
+                                <li>Output Gate: Determines output from current memory.</li>
+                            </ul>
+                        </li>
+                        <li>How LSTM works:
+                            <ul>
+                                <li>Input, previous hidden and cell state.</li>
+                                <li>Gates filter/update cell state, produce new hidden state for next step.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- CNNs: Architecture, Analogy & Applications -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="dl6-head">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#dl6-body" aria-expanded="false" aria-controls="dl6-body">
+                    Convolutional Neural Networks (CNNs)
+                </button>
+            </h2>
+            <div id="dl6-body" class="accordion-collapse collapse" aria-labelledby="dl6-head" data-bs-parent="#accordionDL">
+                <div class="accordion-body">
+                    <strong>What is CNN?</strong>
+                    <ul>
+                        <li>Designed for grid-like data (images/videos), processes 2D data directly.</li>
+                        <li>Goal: extract key features while reducing data size.</li>
+                    </ul>
+                    <strong>CNN Architecture Overview</strong>
+                    <ol>
+                        <li>Input Layer: Takes image data (2D).</li>
+                        <li>Feature Extraction Layers: Repeated blocks of
+                            <ul>
+                                <li>Convolutional Layer: Applies filters (edges/corners).</li>
+                                <li>Activation Function (ReLU): Introduces non-linearity.</li>
+                                <li>Pooling Layer: Downsamples, speeds computation.</li>
+                            </ul>
+                        </li>
+                        <li>Classification Layers:
+                            <ul>
+                                <li>Fully Connected Layers: Final predictions.</li>
+                                <li>Softmax Layer: Probability scores.</li>
+                                <li>Dropout Layer: Prevents overfitting.</li>
+                            </ul>
+                        </li>
+                    </ol>
+                    <strong>Analogy:</strong> Layers as robot house inspector tools
+                    <table class="table table-bordered table-sm">
+                        <thead>
+                            <tr>
+                                <th>Robot Tool</th>
+                                <th>CNN Component</th>
+                                <th>Function</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>Blueprint Detector</td><td>Convolutional Layer</td><td>Detects local features</td></tr>
+                            <tr><td>Pattern Highlighter</td><td>Activation Function (ReLU)</td><td>Introduces non-linearity</td></tr>
+                            <tr><td>Room Summarizer</td><td>Pooling Layer</td><td>Downsamples data</td></tr>
+                            <tr><td>House Expert</td><td>Fully Connected Layer</td><td>Interprets learned features</td></tr>
+                            <tr><td>Guess Maker</td><td>Softmax Layer</td><td>Assigns class probabilities</td></tr>
+                            <tr><td>Quality Checker</td><td>Dropout Layer</td><td>Prevents overfitting</td></tr>
+                        </tbody>
+                    </table>
+                    <strong>Limitations of CNN</strong>
+                    <ul>
+                        <li>High computational cost for large datasets.</li>
+                        <li>Risk of overfitting with small/imbalanced datasets.</li>
+                        <li>Acts as black-box model (hard to interpret).</li>
+                    </ul>
+                    <strong>Applications of CNN</strong>
+                    <ul>
+                        <li>Image Classification (e.g., cat vs dog)</li>
+                        <li>Object Detection (draw bounding boxes)</li>
+                        <li>Face Recognition</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+                  <!-- Gen AI/LLMs Section -->
+<div class="tab-pane fade content-section" id="section-genai">
+    <h2>Gen AI / LLMs
+        <button class="btn btn-outline-success btn-sm download-btn" onclick="downloadNotes('Gen AI / LLMs')">Download Notes</button>
+    </h2>
+    <p class="text-muted">Essentials of Generative AI, Large Language Models, and Transformer architectures—concepts, processes, and key mechanism summaries.</p>
+    <div class="accordion" id="accordionGenAI">
+        <!-- Gen AI Definition and Models -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="genai1-head">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#genai1-body" aria-expanded="true" aria-controls="genai1-body">
+                    What is Generative AI?
+                </button>
+            </h2>
+            <div id="genai1-body" class="accordion-collapse collapse show" aria-labelledby="genai1-head" data-bs-parent="#accordionGenAI">
+                <div class="accordion-body">
+                    <ul>
+                        <li>Subset of deep learning focused on creating new content (not just classifying or predicting).</li>
+                        <li>Learns patterns from large datasets, generates new data based on patterns (e.g., new images after learning from others).</li>
+                        <li>Does not copy—creates original content.</li>
+                        <li>Uses unlabelled data during pretraining.</li>
+                    </ul>
+                    <strong>Types of Generative AI Models:</strong>
+                    <ul>
+                        <li><b>Text-based GenAI:</b> Generates text, code, dialogue, articles. Learns from large text datasets.</li>
+                        <li><b>Multimodal GenAI:</b> Processes and generates text, images, audio, video—multiple media types.</li>
+                    </ul>
+                    <strong>Key Terms:</strong>
+                    <ul>
+                        <li><b>Training:</b> Learning from data.</li>
+                        <li><b>Inference:</b> Predictions/generating outputs from trained models.</li>
+                        <li><b>Supervised Learning:</b> Learning from labelled data.</li>
+                        <li><b>Fine-tuning:</b> Adapting a pre-trained model for a specific task with labelled data.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- LLM Concepts -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="genai2-head">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#genai2-body" aria-expanded="false" aria-controls="genai2-body">
+                    Large Language Models (LLMs)
+                </button>
+            </h2>
+            <div id="genai2-body" class="accordion-collapse collapse" aria-labelledby="genai2-head" data-bs-parent="#accordionGenAI">
+                <div class="accordion-body">
+                    <strong>LLM Definition:</strong>
+                    <ul>
+                        <li>Probabilistic model that calculates likelihood of word sequences.</li>
+                        <li>Predicts next word based on previous words.</li>
+                        <li><b>Precise:</b> Deep learning model based on transformer architecture, trained on huge text datasets for generating human-like text.</li>
+                    </ul>
+                    <strong>“Large” in LLMs:</strong>
+                    <ul>
+                        <li>Millions to hundreds of billions of parameters.</li>
+                        <li>More parameters = higher capacity and performance (up to a point).</li>
+                    </ul>
+                    <strong>How LLMs Work (Simplified):</strong>
+                    <ol>
+                        <li>Take sequence of words.</li>
+                        <li>Compute probabilities for next word.</li>
+                        <li>Select most likely word, append to sequence.</li>
+                        <li>Repeat until EOS (end-of-sequence) token.</li>
+                        <li>Learning occurs by adjusting weights (parameters) during training to predict next word.</li>
+                    </ol>
+                    <strong>Notes:</strong>
+                    <ul>
+                        <li>Too many parameters can cause overfitting (good on training data, poor on new data).</li>
+                        <li>Performance also depends on data quality and model optimization.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Transformer Architecture & Self-Attention -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="genai3-head">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#genai3-body" aria-expanded="false" aria-controls="genai3-body">
+                    Transformer Architecture & Self-Attention
+                </button>
+            </h2>
+            <div id="genai3-body" class="accordion-collapse collapse" aria-labelledby="genai3-head" data-bs-parent="#accordionGenAI">
+                <div class="accordion-body">
+                    <strong>Definition:</strong>
+                    <ul>
+                        <li>Transformer: Processes entire input with self-attention, capturing context & relationships between all words.</li>
+                    </ul>
+                    <strong>Why Transformers?</strong>
+                    <ul>
+                        <li>Parallel processing—faster than RNNs, can "see" the entire sequence at once.</li>
+                        <li>Solves long-range dependency problem, enables better context.</li>
+                        <li>Powers modern LLMs (ChatGPT, etc).</li>
+                    </ul>
+                    <strong>Architecture Overview:</strong>
+                    <ul>
+                        <li><b>Encoder:</b> Converts input to contextual embeddings.</li>
+                        <li><b>Decoder:</b> Generates output (text), uses encoder output for context.</li>
+                        <li>Multiple encoder/decoder layers use self-attention for understanding relationships.</li>
+                    </ul>
+                    <strong>Self-Attention Mechanism:</strong>
+                    <ul>
+                        <li>Weighs importance of each word in context.</li>
+                        <li>Connects all words, not just nearby ones.</li>
+                        <li>Helps answer: “Which other words should I focus on for context?”</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Tokenization, Embeddings, and RAG -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="genai4-head">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#genai4-body" aria-expanded="false" aria-controls="genai4-body">
+                    Tokens, Embeddings & RAG
+                </button>
+            </h2>
+            <div id="genai4-body" class="accordion-collapse collapse" aria-labelledby="genai4-head" data-bs-parent="#accordionGenAI">
+                <div class="accordion-body">
+                    <strong>Tokenization:</strong>
+                    <ul>
+                        <li>LLMs operate on tokens (words or parts of words, punctuation).</li>
+                        <li>Simple text: ~1 token/word; complex: ~2–3 tokens/word.</li>
+                    </ul>
+                    <strong>Embeddings:</strong>
+                    <ul>
+                        <li>Numeric/vector representations of tokens, phrases, sentences.</li>
+                        <li>Allow models to understand meaning & semantic similarity.</li>
+                        <li>Use cases: classification, vector databases, semantic search.</li>
+                    </ul>
+                    <strong>Retrieval-Augmented Generation (RAG):</strong>
+                    <ul>
+                        <li>Enhances LLMs with external knowledge from vector retrieval (search + generation).</li>
+                        <li>How RAG works:
+                            <ol>
+                                <li>Input query encoded as embeddings.</li>
+                                <li>Matched to documents from a vector database.</li>
+                                <li>Content sent to LLM—uses both retrieved content and its own knowledge.</li>
+                                <li>Embeddings are crucial for retrieval quality and reducing hallucinations.</li>
+                            </ol>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Decoder Models & Encoder-Decoder Models -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="genai5-head">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#genai5-body" aria-expanded="false" aria-controls="genai5-body">
+                    Decoder Models & Encoder-Decoder Models
+                </button>
+            </h2>
+            <div id="genai5-body" class="accordion-collapse collapse" aria-labelledby="genai5-head" data-bs-parent="#accordionGenAI">
+                <div class="accordion-body">
+                    <ul>
+                        <li><strong>Decoder Models:</strong> Generate next token one at a time, repeat until EOS token.</li>
+                        <li><strong>Encoder-Decoder Models:</strong> Use encoder for input, decoder for output generation.</li>
+                        <li>These architectures power translation, summarization, and sequential text generation.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="tab-pane fade content-section" id="section-prompt">
+    <h2>Prompt Engineering
+        <button class="btn btn-outline-success btn-sm download-btn" onclick="downloadNotes('Prompt Engineering')">Download Notes</button>
+    </h2>
+    <p class="text-muted">A guide to structuring inputs for LLMs, best practices, techniques, and key challenges.</p>
+    <div class="accordion" id="accordionPrompt">
+        <!-- Customizing LLMs Stepwise -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="prompt1-head">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#prompt1-body" aria-expanded="true" aria-controls="prompt1-body">
+                    Customizing LLMs: Stepwise
+                </button>
+            </h2>
+            <div id="prompt1-body" class="accordion-collapse collapse show" aria-labelledby="prompt1-head" data-bs-parent="#accordionPrompt">
+                <div class="accordion-body">
+                    <ol>
+                        <li>Start with a simple prompt.</li>
+                        <li>Add few-shot prompting.</li>
+                        <li>Add simple retrieval via RAG.</li>
+                        <li>Fine-tune the model.</li>
+                        <li>Optimize retrieval on fine-tuned model.</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+        <!-- Engineering Techniques -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="prompt2-head">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#prompt2-body" aria-expanded="false" aria-controls="prompt2-body">
+                    Techniques & Concepts
+                </button>
+            </h2>
+            <div id="prompt2-body" class="accordion-collapse collapse" aria-labelledby="prompt2-head" data-bs-parent="#accordionPrompt">
+                <div class="accordion-body">
+                    <ul>
+                        <li><strong>Prompt:</strong> Input text for a desired LLM response.</li>
+                        <li><strong>Prompt Engineering:</strong> Designing inputs for more useful LLM outputs.</li>
+                        <li>LLMs predict the next token in a sequence (“completion-based learning”).</li>
+                    </ul>
+                    <strong>In-Context Learning:</strong>
+                    <ul>
+                        <li>Zero-shot: Question only.</li>
+                        <li>One-shot: One example.</li>
+                        <li>Few-shot: Multiple examples.</li>
+                        <li>Model does not update internal weights, but “learns” from the prompt structure.</li>
+                    </ul>
+                    <strong>Chain-of-Thought Prompting:</strong>
+                    <ul>
+                        <li>Prompt LLM to “show its work” stepwise for complex reasoning.</li>
+                        <li>
+                            Example: 5 balls + (2 cans × 3 balls) → Model response: 2 × 3 = 6, 5 + 6 = 11.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Hallucinations -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="prompt3-head">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#prompt3-body" aria-expanded="false" aria-controls="prompt3-body">
+                    Challenge: Hallucination
+                </button>
+            </h2>
+            <div id="prompt3-body" class="accordion-collapse collapse" aria-labelledby="prompt3-head" data-bs-parent="#accordionPrompt">
+                <div class="accordion-body">
+                    <strong>Hallucination:</strong> Fluent but incorrect/made-up output from LLMs.
+                </div>
+            </div>
+        </div>
+        <!-- Summary Table -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="prompt4-head">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#prompt4-body" aria-expanded="false" aria-controls="prompt4-body">
+                    Techniques Summary Table
+                </button>
+            </h2>
+            <div id="prompt4-body" class="accordion-collapse collapse" aria-labelledby="prompt4-head" data-bs-parent="#accordionPrompt">
+                <div class="accordion-body">
+                    <table class="table table-bordered table-sm">
+                        <thead>
+                            <tr>
+                                <th>Topic</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>Prompt Engineering</td><td>Crafting inputs for LLM behavior</td></tr>
+                            <tr><td>Instruction Tuning</td><td>Fine-tuning for following instructions</td></tr>
+                            <tr><td>RLHF</td><td>Human preferences guide alignment</td></tr>
+                            <tr><td>Few-shot Prompting</td><td>Examples in the prompt</td></tr>
+                            <tr><td>Chain-of-Thought</td><td>Reasoning steps included</td></tr>
+                            <tr><td>Hallucination</td><td>Making up fluent but false info</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+ <!-- OCI AI Portfolio Section -->
+<div class="tab-pane fade content-section" id="section-portfolio">
+  <h2>
+    OCI AI Portfolio
+    <button class="btn btn-outline-success btn-sm download-btn" onclick="downloadNotes('OCI AI Portfolio')">Download Notes</button>
+  </h2>
+  <p class="text-muted">Brief summary: Oracle Cloud Infrastructure's AI services, features, and integrations.</p>
+
+  <div class="row">
+    <!-- OCI AI Services Overview Card -->
+    <div class="col-md-6 mb-4">
+      <div class="card h-100">
+        <div class="card-header">
+          <h3 class="card-title">OCI AI Services: Overview</h3>
+        </div>
+        <div class="card-body">
+          <p>A portfolio of cloud services by Oracle that enables organizations to leverage their data for business applications, focusing on prebuilt and customizable AI and machine learning models.</p>
+
+          <h4 class="card-subtitle mt-3">Core Concept</h4>
+          <ul>
+            <li>Helps organizations use data for business applications.</li>
+            <li>Focuses on prebuilt and customizable machine learning models.</li>
+            <li>Simplifies AI integration for developers without deep data science expertise.</li>
+          </ul>
+
+          <h4 class="card-subtitle mt-3">Architecture</h4>
+          <ul>
+            <li><strong>Foundation:</strong> Built on data.</li>
+            <li><strong>Layered Approach:</strong> OCI infrastructure supports AI services consumed by business applications.</li>
+            <li><strong>No Infrastructure Management:</strong> Users access services via APIs without managing infrastructure.</li>
+          </ul>
+
+          <h4 class="card-subtitle mt-3">Access Methods</h4>
+          <ul>
+            <li><strong>OCI Console:</strong> Browser-based, user-friendly interface.</li>
+            <li><strong>REST API:</strong> Requires programming skills.</li>
+            <li><strong>Language SDKs:</strong> Java, Python, TypeScript/JavaScript, .Net, Go, Ruby.</li>
+            <li><strong>CLI:</strong> Command line interface for quick access and full functionality.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Specific OCI AI Services Card (with Table) -->
+    <div class="col-md-6 mb-4">
+      <div class="card h-100">
+        <div class="card-header">
+          <h3 class="card-title">Specific OCI AI Services</h3>
+        </div>
+        <div class="card-body">
+          <div class="table-responsive">
+            <table class="table table-bordered">
+              <thead class="thead-light">
+                <tr>
+                  <th>Service</th>
+                  <th>Function</th>
+                  <th>Key Features</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>OCI Language</strong></td>
+                  <td>Sophisticated text analysis</td>
+                  <td>
+                    <ul>
+                      <li>Pretrained models: language detection, sentiment, key phrase extraction, NER, PII detection</li>
+                      <li>Custom models for domain-specific NER and classification</li>
+                      <li>Neural machine translation for multiple languages</li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr>
+                  <td><strong>OCI Vision</strong></td>
+                  <td>Image analysis, object detection, classification</td>
+                  <td>
+                    <ul>
+                      <li>Pretrained models: object detection, image classification, OCR</li>
+                      <li>Custom models for object detection with bounding boxes and image classification</li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr>
+                  <td><strong>OCI Speech</strong></td>
+                  <td>Converts speech audio to text</td>
+                  <td>Outputs transcriptions in JSON and SRT formats</td>
+                </tr>
+                <tr>
+                  <td><strong>OCI Document Understanding</strong></td>
+                  <td>Extracts text and info from documents</td>
+                  <td>
+                    <ul>
+                      <li>Text extraction with bounding boxes</li>
+                      <li>Key-value extraction from receipts, invoices, IDs</li>
+                      <li>Table extraction maintaining relationships</li>
+                      <li>Document classification</li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr>
+                  <td><strong>Oracle Digital Assistant</strong></td>
+                  <td>AI-driven chatbot platform</td>
+                  <td>
+                    <ul>
+                      <li>Routes conversations to appropriate skills</li>
+                      <li>Greets users, manages interruptions and disambiguation</li>
+                    </ul>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <!-- OCI Data Science Card -->
+    <div class="col-md-6 mb-4">
+      <div class="card h-100">
+        <div class="card-header">
+          <h3 class="card-title">OCI Data Science (ML Services Overview)</h3>
+        </div>
+        <div class="card-body">
+          <p>Managed service to support the entire machine learning lifecycle, with support for Python and open-source tools.</p>
+
+          <h4 class="card-subtitle mt-3">Core Principles</h4>
+          <ul>
+            <li><strong>Accelerated:</strong> Pre-configured CPU/GPU compute and Oracle's ADS SDK automate workflows.</li>
+            <li><strong>Collaborative:</strong> Work together within Projects ensuring reproducibility.</li>
+            <li><strong>Enterprise-Grade:</strong> Fully managed with OCI security and maintenance.</li>
+          </ul>
+
+          <h4 class="card-subtitle mt-3">Key Features & Terminology</h4>
+          <ul>
+            <li><strong>Projects:</strong> Collaborative data science workspaces.</li>
+            <li><strong>Notebook Sessions:</strong> JupyterLab for building and training models.</li>
+            <li><strong>Conda Environments:</strong> Package and dependency management.</li>
+            <li><strong>Model Catalog:</strong> Central repository to store and track models.</li>
+            <li><strong>Model Deployments:</strong> Deploy models as HTTP endpoints for live predictions.</li>
+            <li><strong>Jobs:</strong> Define and run repeatable ML tasks.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- GPUs and Superclusters Card -->
+    <div class="col-md-6 mb-4">
+      <div class="card h-100">
+        <div class="card-header">
+          <h3 class="card-title">GPUs and Superclusters in OCI</h3>
+        </div>
+        <div class="card-body">
+          <h4 class="card-subtitle">OCI's RDMA Supercluster: Key Takeaways</h4>
+          <p>OCI uses Remote Direct Memory Access (RDMA) technology to enable high-speed, low-latency data transfer by bypassing the CPU. The RDMA Supercluster uses RDMA over Converged Ethernet (RoCE) to support massive GPU workloads, built on a three-tier Clos fabric architecture for optimal performance.</p>
+          <ul>
+            <li><strong>Lossless Networking:</strong> Tuned buffers prevent packet loss with latency ~20 microseconds.</li>
+            <li><strong>Intelligent Placement:</strong> Control plane optimizes placement of latency-sensitive workloads.</li>
+            <li><strong>Network Locality Hints:</strong> Ensures traffic locality to reduce latency and collisions.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+   <!-- OCI Generative AI Service Section -->
+<div class="tab-pane fade content-section" id="section-genaisrv">
+  <h2>OCI Generative AI Service
+    <button class="btn btn-outline-success btn-sm download-btn" onclick="downloadNotes('OCI Generative AI Service')">Download Notes</button>
+  </h2>
+  <p class="text-muted">Fully managed, serverless service for customizable language models, fine-tuning, and dedicated AI clusters.</p>
+  
+  <div class="accordion" id="accordionGenAISrv">
+    <!-- Service Overview -->
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="genaisrv-overview-head">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#genaisrv-overview-body" aria-expanded="false" aria-controls="genaisrv-overview-body">
+          Service Overview
+        </button>
+      </h2>
+      <div id="genaisrv-overview-body" class="accordion-collapse collapse" aria-labelledby="genaisrv-overview-head" data-bs-parent="#accordionGenAISrv">
+        <div class="accordion-body">
+          <p>OCI Generative AI provides customizable large language models (LLMs) accessible via a unified API, built on three pillars: foundational models, flexible fine-tuning, and dedicated AI clusters.</p>
+          
+          <h4>Foundational Models</h4>
+          <ul>
+            <li><strong>Chat Models:</strong> Cohere's command-r-plus, command-r-16k, Meta's llama 3-70billion-instruct—conversational, instruction-tuned, context retention; scale from core functionalities up to 128,000 tokens.</li>
+            <li><strong>Embedding Models:</strong> Embed English and multilingual models convert text into numerical vectors for semantic search and relationship analysis—multilingual model supports 100+ languages.</li>
+          </ul>
+          
+          <h4>Fine-Tuning & AI Clusters</h4>
+          <ul>
+            <li><strong>Fine-tuning:</strong> Adapt pre-trained models using small, domain-specific datasets via t-few fine-tuning for faster, cost-efficient model updates.</li>
+            <li><strong>Dedicated AI clusters:</strong> Isolated GPU-powered resources for secure, high-performance tuning and inference; uses exclusive RDMA networking for ultra-low latency.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Purpose of Model Endpoints -->
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="genaisrv-endpoints-head">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#genaisrv-endpoints-body" aria-expanded="false" aria-controls="genaisrv-endpoints-body">
+          Purpose of Model Endpoints
+        </button>
+      </h2>
+      <div id="genaisrv-endpoints-body" class="accordion-collapse collapse" aria-labelledby="genaisrv-endpoints-head" data-bs-parent="#accordionGenAISrv">
+        <div class="accordion-body">
+          <ul>
+            <li><strong>Hosting & Serving Fine-tuned Models:</strong> Model endpoints allow deployment of trained or fine-tuned models for real-time or batch inference via API, enabling applications to receive predictions and generated content.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Vector Search in Oracle Database 23ai -->
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="genaisrv-vectorsearch-head">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#genaisrv-vectorsearch-body" aria-expanded="false" aria-controls="genaisrv-vectorsearch-body">
+          Vector Search in Oracle Database 23ai
+        </button>
+      </h2>
+      <div id="genaisrv-vectorsearch-body" class="accordion-collapse collapse" aria-labelledby="genaisrv-vectorsearch-head" data-bs-parent="#accordionGenAISrv">
+        <div class="accordion-body">
+          <p>AI Vector Search lets databases store numerical embeddings for semantic retrieval of diverse data types, supporting complex GenAI pipelines within Oracle's converged database architecture.</p>
+          
+          <h4>How it Works</h4>
+          <ul>
+            <li><strong>Vector Generation:</strong> Models (including ONNX format) convert data to vectors, loaded via VECTOR_EMBEDDING SQL function.</li>
+            <li><strong>Similarity Search:</strong> VECTOR_DISTANCE function measures similarity; smaller distance = closer match; query across multiple tables and join with classic SQL.</li>
+            <li><strong>Performance & Accuracy:</strong> Vector indexes speed searches, with options for in-memory, partitioning, and TARGET ACCURACY for approximate result control. Use APPROXIMATE keyword for optimized index queries.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Powering GenAI Pipelines -->
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="genaisrv-pipelines-head">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#genaisrv-pipelines-body" aria-expanded="false" aria-controls="genaisrv-pipelines-body">
+          Powering GenAI Pipelines
+        </button>
+      </h2>
+      <div id="genaisrv-pipelines-body" class="accordion-collapse collapse" aria-labelledby="genaisrv-pipelines-head" data-bs-parent="#accordionGenAISrv">
+        <div class="accordion-body">
+          <p>AI Vector Search underpins Retrieval-Augmented Generation (RAG) pipelines, enhancing LLM output with relevant data and context.</p>
+          <ol>
+            <li><strong>Data Sources:</strong> Load structured and unstructured data (databases, files, social media).</li>
+            <li><strong>Transformation & Vectorization:</strong> Documents are transformed, split, summarized, and embedded as vectors stored in the database.</li>
+            <li><strong>Search & RAG:</strong> User queries are converted to vectors for similarity search; retrieved documents help augment LLM prompts for more accurate, context-aware answers.</li>
+          </ol>
+          <p>This integration allows advanced operations—like matching job positions semantically and filtering by city—using a single SQL query. Oracle Database 23ai also integrates with frameworks such as LangChain and LlamaIndex for developer flexibility.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    </div>
+    <!-- Accessibility: ARIA roles and labels can be added for each section as your content grows -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Search/Filter function
+        document.getElementById('searchInput').addEventListener('keyup', function() {
+            let query = this.value.toLowerCase();
+            let sections = document.querySelectorAll('.content-section');
+            sections.forEach(section => {
+                section.style.display = 'block';
+                if (!section.innerText.toLowerCase().includes(query)) {
+                    section.style.display = 'none';
+                }
+            });
+        });
+
+        // Download Notes Function
+        function downloadNotes(sectionName) {
+            // For demonstration, just download static text. Replace with dynamic notes if desired.
+            let notes = document.querySelector(`#section-${sectionName.toLowerCase().replace(/ /g, '')}`).innerText;
+            let blob = new Blob([notes], {type: 'text/plain'});
+            let link = document.createElement('a');
+            link.href = window.URL.createObjectURL(blob);
+            link.download = `${sectionName}.txt`;
+            link.click();
+        }
+    </script>
+</body>
+</html>
